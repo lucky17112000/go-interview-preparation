@@ -1,3 +1,16 @@
+#### parameter and arguments
+
+- parameter-> variable in function definition
+- argument-> value passed to function when calling
+
+```code
+func sum(a, b int) { // parameter or formal parameter
+	z := a + b
+	fmt.Println(z)
+}
+sum(10, 20) // argument or actual parameter
+```
+
 ## function->
 
 - standard function
