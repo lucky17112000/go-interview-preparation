@@ -6,17 +6,24 @@ import (
 )
 
 // import "mathlib"
+
+func processOperation(a int, b int, op func(p, q int)) {
+	op(a, b)
+
+}
+
+func call() func(a, b int) {
+	return sum
+
+}
 func sum(a, b int) { // parameter or formal parameter
 	z := a + b
 	fmt.Println(z)
 }
 
 func main() {
-	sum(5, 10) //argument or actual parameter
-}
+	//argument or actual parameter
 
-func init() {
-	fmt.Println("init function called")
-
-	// fmt.Println(a)
+	add := call()
+	add(10, 20)
 }
